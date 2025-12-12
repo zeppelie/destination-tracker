@@ -1,0 +1,63 @@
+:root {
+  /* Colors - Aero/Premium Dark Theme */
+  --color-bg-primary: #0f172a; /* Slate 900 */
+  --color-bg-secondary: #1e293b; /* Slate 800 */
+  --color-bg-card: rgba(30, 41, 59, 0.7); /* Glass effect base */
+  
+  --color-text-primary: #f8fafc; /* Slate 50 */
+  --color-text-secondary: #94a3b8; /* Slate 400 */
+  
+  --color-accent-primary: #38bdf8; /* Sky 400 */
+  --color-accent-secondary: #818cf8; /* Indigo 400 */
+  --color-accent-glow: rgba(56, 189, 248, 0.5);
+
+  --color-visited: #4ade80; /* Green 400 */
+  --color-never-visited: #f472b6; /* Pink 400 */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  /* Premium subtle gradient background */
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(129, 140, 248, 0.08), transparent 25%);
+  background-attachment: fixed;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
